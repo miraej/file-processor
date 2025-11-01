@@ -68,7 +68,7 @@ int main(int argc, char *argv[]) {
         int n = read(fd_s2c, result, sizeof(result) - 1);
         result[n] = '\0';
 
-        printf("결과: %s\n", result);
+        printf("%d번째 줄 결과 수신: %s\n",line_count, result);
     }
 
     write(fd_c2s, "END", 4);
